@@ -8,7 +8,7 @@ export default function Component() {
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
         <div className="text-2xl font-bold text-[#158C8C]">
-          <Image src="/Images/Logo_full.png" alt="Echo Logo" width={120} height={40} />
+          <Image src="d:\Codeer projecten\Echo\my-echo-website\Images\Logo_full.png" alt="Echo Logo" width={120} height={40} />
         </div>
         <div className="space-x-4">
           <a href="#features" className="text-black hover:text-[#158C8C] transition-colors">Features</a>
@@ -116,7 +116,7 @@ export default function Component() {
       <footer className="bg-[#F6F6F6] text-black py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center">
-            <Image src="/Images/Logo_full.png" alt="Echo Logo" width={120} height={40} className="mb-4" />
+            <Image src="d:\Codeer projecten\Echo\my-echo-website\Images\Logo_full.png" alt="Echo Logo" width={120} height={40} className="mb-4" />
             <p className="mb-4">info@echo.com</p>
             <div className="space-x-4 mb-4">
               <a href="#" className="hover:text-[#158C8C] transition-colors">Privacy Statement</a>
