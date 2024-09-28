@@ -8,7 +8,7 @@ export default function Component() {
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
         <div className="text-2xl font-bold text-[#158C8C]">
-          <Image src="d:\Codeer projecten\Echo\my-echo-website\Images\Logo_full.png" alt="Echo Logo" width={120} height={40} />
+          <Image src="/Images/Logo_full.png" alt="Echo Logo" width={120} height={40} />
         </div>
         <div className="space-x-4">
           <a href="#features" className="text-black hover:text-[#158C8C] transition-colors">Features</a>
@@ -42,7 +42,7 @@ export default function Component() {
           <h2 className="text-4xl font-bold text-center mb-12">A pricing structure <span className="text-[#158C8C]">made</span> for SMEs</h2>
           <div className="flex justify-center space-x-8">
             {[
-              { name: '1 Month', price: '$30/mth', description: 'Try it for a month and test the various features and integrations at your disposal.' },
+              { name: '1 Month', price: '$30/mth', description: 'Try our platform for a month and test our various features and integrations.' },
               { name: '3 Months', price: '$20/mth', description: 'The package you need to consistently boost your customer acquisition for the next quarter.' },
               { name: '1 Year', price: '$15/mth', description: '15-20x as affordable as competing platforms. Made to minimize costs, and maximize your returns.' }
             ].map((plan, index) => (
@@ -116,7 +116,7 @@ export default function Component() {
       <footer className="bg-[#F6F6F6] text-black py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center">
-            <Image src="d:\Codeer projecten\Echo\my-echo-website\Images\Logo_full.png" alt="Echo Logo" width={120} height={40} className="mb-4" />
+            <Image src="/Images/Logo_full.png" alt="Echo Logo" width={120} height={40} className="mb-4" />
             <p className="mb-4">info@echo.com</p>
             <div className="space-x-4 mb-4">
               <a href="#" className="hover:text-[#158C8C] transition-colors">Privacy Statement</a>
