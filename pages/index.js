@@ -24,7 +24,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold mb-4">
             Turn <span className="text-[#00FFF0]">voices</span> into <span className="text-[#00FFF0]">echoes</span> with proven referral campaigns
           </h1>
-          <p className="mb-4">Each customer's voice can become an echo that amplifies your brand. We're here to help you create and manage referral campaigns effortlessly, and increase customer acquisition.</p>
+          <p className="mb-4">Each customer&apos;s voice can become an echo that amplifies your brand. We&apos;re here to help you create and manage referral campaigns effortlessly, and increase customer acquisition.</p>
           <button className="bg-[#BFFFFB] text-[#030082] px-6 py-3 rounded text-lg font-semibold">Start for free</button>
         </div>
         <div className="w-1/2 flex justify-center">
@@ -59,8 +59,8 @@ const Home = () => {
       <section className="flex justify-between items-center p-8 bg-[#030082]">
         <div className="w-1/2">
           <h2 className="text-3xl font-bold mb-4">Word of mouth is trusted up to 10x more than paid advertising</h2>
-          <p className="mb-4">Your customers' voices are invaluable, and referral campaigns are the key to unlocking them. We help you echo your brand efficiently, saving you time and money to focus on growth.</p>
-          <button className="bg-[#BFFFFB] text-[#030082] px-6 py-3 rounded text-lg font-semibold">Let's grow your reach</button>
+          <p className="mb-4">Your customers&apos; voices are invaluable, and referral campaigns are the key to unlocking them. We help you echo your brand efficiently, saving you time and money to focus on growth.</p>
+          <button className="bg-[#BFFFFB] text-[#030082] px-6 py-3 rounded text-lg font-semibold">Let&apos;s grow your reach</button>
         </div>
         <div className="w-1/2 flex justify-center">
           <div className="bg-gray-300 w-80 h-64 flex items-center justify-center">
@@ -78,7 +78,7 @@ const Home = () => {
         </div>
         <div className="w-1/2">
           <h2 className="text-3xl font-bold mb-4">Create personalised referral campaigns within minutes</h2>
-          <p className="mb-4">We found that most referral campaign platforms are unreliable, complex, or too expensive. That's why we set out to create an easy-to-use platform that provides you with the tools you need to boost your word of mouth.</p>
+          <p className="mb-4">We found that most referral campaign platforms are unreliable, complex, or too expensive. That&apos;s why we set out to create an easy-to-use platform that provides you with the tools you need to boost your word of mouth.</p>
           <button className="bg-[#BFFFFB] text-[#030082] px-6 py-3 rounded text-lg font-semibold">Start for free</button>
         </div>
       </section>
