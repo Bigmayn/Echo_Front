@@ -1,115 +1,134 @@
-import Image from "next/image";
-import localFont from "next/font/local";
+import React from 'react';
+import { ArrowRightIcon } from 'lucide-react';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-export default function Home() {
+const Home = () => {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-[#030082] min-h-screen text-[#BFFFFB]">
+      {/* Navigation */}
+      <nav className="flex justify-between items-center p-4">
+        <div className="text-2xl font-bold">LOGO</div>
+        <div className="space-x-4">
+          <a href="#features" className="text-[#BFFFFB]">Features</a>
+          <a href="#pricing" className="text-[#BFFFFB]">Pricing</a>
+          <a href="#mission" className="text-[#BFFFFB]">Our mission</a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div className="space-x-4">
+          <button className="text-[#BFFFFB]">Log in</button>
+          <button className="bg-[#BFFFFB] text-[#030082] px-4 py-2 rounded">Get started</button>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="flex justify-between items-center p-8 bg-[#030082]">
+        <div className="w-1/2">
+          <h1 className="text-4xl font-bold mb-4">
+            Turn <span className="text-[#00FFF0]">voices</span> into <span className="text-[#00FFF0]">echoes</span> with proven referral campaigns
+          </h1>
+          <p className="mb-4">Each customer's voice can become an echo that amplifies your brand. We're here to help you create and manage referral campaigns effortlessly, and increase customer acquisition.</p>
+          <button className="bg-[#BFFFFB] text-[#030082] px-6 py-3 rounded text-lg font-semibold">Start for free</button>
+        </div>
+        <div className="w-1/2 flex justify-center">
+          <div className="bg-gray-300 w-80 h-64 flex items-center justify-center">
+            [Illustration Placeholder]
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="bg-[#3300FF] text-[#BFFFFB] py-16">
+        <h2 className="text-3xl font-bold text-center mb-8">A pricing structure designed for SMEs</h2>
+        <div className="flex justify-center space-x-8">
+          {['Free', 'Unlimited', 'Patronage'].map((plan, index) => (
+            <div key={plan} className={`bg-[#030082] p-6 rounded-lg shadow-lg ${index === 1 ? 'transform scale-110' : ''}`}>
+              <h3 className="text-2xl font-bold mb-2">{plan}</h3>
+              <p className="mb-4">{index === 0 ? '€0/mth' : index === 1 ? '€50/mth' : 'Custom'}</p>
+              <ul className="mb-4">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+              </ul>
+              <button className="bg-[#BFFFFB] text-[#030082] px-4 py-2 rounded w-full">
+                {index === 2 ? 'Contact us' : 'Start for free'}
+              </button>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Trust Section */}
+      <section className="flex justify-between items-center p-8 bg-[#030082]">
+        <div className="w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Word of mouth is trusted up to 10x more than paid advertising</h2>
+          <p className="mb-4">Your customers' voices are invaluable, and referral campaigns are the key to unlocking them. We help you echo your brand efficiently, saving you time and money to focus on growth.</p>
+          <button className="bg-[#BFFFFB] text-[#030082] px-6 py-3 rounded text-lg font-semibold">Let's grow your reach</button>
+        </div>
+        <div className="w-1/2 flex justify-center">
+          <div className="bg-gray-300 w-80 h-64 flex items-center justify-center">
+            [Image Placeholder]
+          </div>
+        </div>
+      </section>
+
+      {/* Campaign Section */}
+      <section className="flex justify-between items-center p-8 bg-[#3300FF]">
+        <div className="w-1/2 flex justify-center">
+          <div className="bg-gray-300 w-80 h-64 flex items-center justify-center">
+            [Image Placeholder]
+          </div>
+        </div>
+        <div className="w-1/2">
+          <h2 className="text-3xl font-bold mb-4">Create personalised referral campaigns within minutes</h2>
+          <p className="mb-4">We found that most referral campaign platforms are unreliable, complex, or too expensive. That's why we set out to create an easy-to-use platform that provides you with the tools you need to boost your word of mouth.</p>
+          <button className="bg-[#BFFFFB] text-[#030082] px-6 py-3 rounded text-lg font-semibold">Start for free</button>
+        </div>
+      </section>
+
+      {/* Insights Section */}
+      <section className="flex justify-between items-center p-8 bg-[#030082]">
+        <div className="w-1/2">
+          <h2 className="text-3xl font-bold mb-4">From insights to actions with the Echo Chamber</h2>
+          <p className="mb-4">Our Echo Chamber presents your campaign performance through a clean, interactive dashboard. From results to reward management, we help you gain valuable insights effortlessly.</p>
+          <button className="bg-[#BFFFFB] text-[#030082] px-6 py-3 rounded text-lg font-semibold">Learn more about our Echo Chamber</button>
+        </div>
+        <div className="w-1/2 flex justify-center">
+          <div className="bg-gray-300 w-80 h-64 flex items-center justify-center">
+            [Dashboard Placeholder]
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-[#BFFFFB] text-[#030082] text-center py-16">
+        <h2 className="text-3xl font-bold mb-4">Start generating Echoes and unlock new growth today.</h2>
+        <p className="mb-8">Try it out for free. Zero-risk, limitless potential.</p>
+        <button className="bg-[#030082] text-[#BFFFFB] px-8 py-4 rounded text-xl font-bold">
+          Create your free account <ArrowRightIcon className="inline ml-2" />
+        </button>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-[#030082] text-[#BFFFFB] p-8">
+        <div className="flex justify-between">
+          <div>
+            <h3 className="text-xl font-bold mb-4">LOGO</h3>
+          </div>
+          {['Product', 'Company', 'Resources'].map((column) => (
+            <div key={column}>
+              <h3 className="text-xl font-bold mb-4">{column}</h3>
+              <ul>
+                <li className="mb-2"><a href="#">Link 1</a></li>
+                <li className="mb-2"><a href="#">Link 2</a></li>
+                <li className="mb-2"><a href="#">Link 3</a></li>
+              </ul>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 text-center">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );
-}
+};
+
+export default Home;
