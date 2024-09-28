@@ -1,10 +1,29 @@
 import React from 'react';
 import { ArrowRightIcon } from 'lucide-react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Component() {
   return (
-    <div className="bg-white text-black">
+    <div className="bg-white text-black font-sans">
+      <Head>
+        <style>{`
+          @font-face {
+            font-family: 'Clash Grotesk';
+            src: url('/Fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+                 url('/Fonts/ClashGrotesk-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: 'Clash Grotesk';
+            src: url('/Fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+                 url('/Fonts/ClashGrotesk-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+          }
+        `}</style>
+      </Head>
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
         <div className="text-2xl font-bold text-[#158C8C]">
@@ -16,7 +35,7 @@ export default function Component() {
         </div>
         <div className="space-x-4">
           <button className="text-black hover:text-[#158C8C] transition-colors">Log in</button>
-          <button className="bg-[#158C8C] text-white px-4 py-2 rounded hover:bg-[#0F6E6E] transition-colors">Get Started</button>
+          <button className="bg-[#158C8C] text-white px-4 py-2 rounded hover:bg-[#0F6E6E] transition-colors font-bold">Get Started</button>
         </div>
       </nav>
 
@@ -27,7 +46,7 @@ export default function Component() {
             The only <span className="text-[#158C8C]">affordable</span> solution for <span className="text-[#158C8C]">effortless</span> referral campaigns
           </h1>
           <p className="mb-8 text-lg">Your customers&apos; voices can be Echoes that amplify your brand. We&apos;re here to help you achieve that through affordable, hassle-free referral campaigns that boost your customer acquisition.</p>
-          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-semibold hover:bg-[#0F6E6E] transition-colors">Get Started</button>
+          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Get Started</button>
         </div>
         <div className="w-1/2 flex justify-center">
           <div className="bg-[#F6F6F6] w-full h-96 flex items-center justify-center rounded-lg shadow-lg">
@@ -50,7 +69,7 @@ export default function Component() {
                 <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
                 <p className="text-3xl font-bold mb-6">{plan.price}</p>
                 <p className="mb-8 text-sm">{plan.description}</p>
-                <button className="bg-[#158C8C] text-white px-6 py-3 rounded w-full hover:bg-[#0F6E6E] transition-colors">
+                <button className="bg-[#158C8C] text-white px-6 py-3 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
                   Get Started
                 </button>
               </div>
@@ -64,7 +83,7 @@ export default function Component() {
         <div className="w-1/2 pr-12">
           <h2 className="text-4xl font-bold mb-6">Word of mouth is trusted up to 10x more than paid advertising</h2>
           <p className="mb-8 text-lg">Your customers&apos; voices are invaluable, and referral campaigns are the key to unlocking them. We help you Echo your brand efficiently, saving you time and money to focus on growth.</p>
-          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-semibold hover:bg-[#0F6E6E] transition-colors">Boost your acquisition</button>
+          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Boost your acquisition</button>
         </div>
         <div className="w-1/2 flex justify-center">
           <div className="bg-[#F6F6F6] w-full h-96 flex items-center justify-center rounded-lg shadow-lg">
@@ -83,7 +102,7 @@ export default function Component() {
         <div className="w-1/2 pl-12">
           <h2 className="text-4xl font-bold mb-6">Create personalised referral campaigns within minutes</h2>
           <p className="mb-8 text-lg">We found that most referral campaign platforms are unreliable, complex, or too expensive. That&apos;s why we set out to create an easy-to-use platform that provides you with the tools you need to boost your word of mouth.</p>
-          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-semibold hover:bg-[#0F6E6E] transition-colors">Get Started</button>
+          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Get Started</button>
         </div>
       </section>
 
@@ -92,7 +111,7 @@ export default function Component() {
         <div className="w-1/2 pr-12">
           <h2 className="text-4xl font-bold mb-6">From insights to actions with the Echo Chamber</h2>
           <p className="mb-8 text-lg">Our Echo Chamber presents your campaign performance through a clean, interactive dashboard. Track your results, and act quickly through integrations with your platforms of choice.</p>
-          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-semibold hover:bg-[#0F6E6E] transition-colors">Learn More</button>
+          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Learn More</button>
         </div>
         <div className="w-1/2 flex justify-center">
           <div className="bg-[#F6F6F6] w-full h-96 flex items-center justify-center rounded-lg shadow-lg">
