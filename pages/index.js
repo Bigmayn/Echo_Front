@@ -24,25 +24,80 @@ export default function Component() {
           }
         `}</style>
       </Head>
-      
-      {/* Navigation section - unchanged */}
+      {/* Navigation */}
       <nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
-        {/* ... navigation content remains the same ... */}
+        <div className="text-2xl font-bold text-[#158C8C]">
+          <Image src="/Images/Logo_full.png" alt="Echo Logo" width={120} height={40} />
+        </div>
+        <div className="flex items-center space-x-8">
+          <div className="space-x-4">
+            <a href="#features" className="text-black hover:text-[#158C8C] transition-colors">Features</a>
+            <a href="#pricing" className="text-black hover:text-[#158C8C] transition-colors">Pricing</a>
+          </div>
+          <div className="space-x-4">
+            <button className="text-black hover:text-[#158C8C] transition-colors">Log in</button>
+            <button className="bg-[#158C8C] text-white px-4 py-2 rounded hover:bg-[#0F6E6E] transition-colors font-bold">Get Started</button>
+          </div>
+        </div>
       </nav>
 
-      {/* Hero Section - unchanged */}
+      {/* Hero Section */}
       <section className="flex justify-between items-center py-20 px-6 max-w-7xl mx-auto">
-        {/* ... hero content remains the same ... */}
+        <div className="w-1/2 pr-12">
+          <h1 className="text-5xl font-bold mb-6 leading-tight">
+            The only <span className="text-[#158C8C]">affordable</span> solution for waiting list referral campaigns
+          </h1>
+          <p className="mb-8 text-lg">Echo provides you with the tools you need to effectively manage referral campaigns for waiting lists. Create campaigns, track referrals, and boost your customer acquistion.</p>
+          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Get Started</button>
+        </div>
+        <div className="w-1/2 flex justify-center">
+          <Image src="/Images/Hero_Image.png" alt="Hero Image" width={500} height={300} />
+        </div>
       </section>
 
-      {/* Pricing Section - unchanged */}
+      {/* Pricing Section */}
       <section id="pricing" className="bg-[#F6F6F6] py-20">
-        {/* ... pricing content remains the same ... */}
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12">A pricing structure made for <span className="text-[#158C8C]">SMEs</span></h2>
+          <div className="flex justify-center items-center space-x-4">
+            <div className="bg-[#158C8C1A] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
+              <h3 className="text-xl font-bold mb-4">1 Month</h3>
+              <p className="text-2xl font-bold mb-6">$35/mth</p>
+              <p className="mb-8 text-sm">Try out the platform for a month and discover the power of referral marketing.</p>
+              <button className="bg-[#158C8C] text-white px-4 py-2 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
+                Get Started
+              </button>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-lg w-1/3 transform scale-105 z-10">
+              <h3 className="text-2xl font-bold mb-4">3 Months</h3>
+              <p className="text-3xl font-bold mb-6">$20/mth</p>
+              <p className="mb-8 text-sm">A full quarter of referral marketing software at a fraction of the price of alternatives.</p>
+              <button className="bg-[#158C8C] text-white px-6 py-3 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
+                Get Started
+              </button>
+            </div>
+            <div className="bg-[#158C8C1A] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
+              <h3 className="text-xl font-bold mb-4">1 Year</h3>
+              <p className="text-2xl font-bold mb-6">$15/mth</p>
+              <p className="mb-8 text-sm">Join Echo for a year and save over 90% compared with competing platforms</p>
+              <button className="bg-[#158C8C] text-white px-4 py-2 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Trust Section - unchanged */}
+      {/* Trust Section */}
       <section className="flex justify-between items-center py-20 px-6 max-w-7xl mx-auto">
-        {/* ... trust content remains the same ... */}
+        <div className="w-1/2 pr-12">
+          <h2 className="text-4xl font-bold mb-6">Word of mouth is trusted up to 10x more than paid advertising</h2>
+          <p className="mb-8 text-lg">Your customers&apos; voices are invaluable, and referral campaigns are the key to unlocking them. We help you Echo your brand efficiently, saving you time and money to focus on growth.</p>
+          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Boost your acquisition</button>
+        </div>
+        <div className="w-1/2 flex justify-center">
+          <Image src="/Images/WoM_Image.png" alt="Word of Mouth Image" width={500} height={300} />
+        </div>
       </section>
 
       {/* Updated Features Section */}
@@ -133,14 +188,33 @@ export default function Component() {
         </div>
       </section>
 
-      {/* Final CTA - unchanged */}
+      {/* Final CTA */}
       <section className="bg-[#158C8C] text-white text-center py-20">
-        {/* ... CTA content remains the same ... */}
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-4xl font-bold mb-6">Start generating Echoes and unlock new growth today.</h2>
+          <p className="mb-10 text-xl italic">The most affordable platform for referral campaigns.</p>
+          <button className="bg-white text-[#158C8C] px-10 py-4 rounded-lg text-xl font-bold hover:bg-[#F6F6F6] transition-colors">
+            Boost your acquisition today <ArrowRightIcon className="inline ml-2" />
+          </button>
+        </div>
       </section>
 
-      {/* Footer - unchanged */}
+      {/* Footer */}
       <footer className="bg-white text-black py-12">
-        {/* ... footer content remains the same ... */}
+        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
+          <Image src="/Images/Logo_full.png" alt="Echo Logo" width={120} height={40} className="mb-4" />
+          <p className="mb-4">
+            <a href="mailto:Info@echo.com" className="hover:text-[#158C8C] transition-colors">Info@echo.com</a>
+          </p>
+          <div className="flex items-center justify-center space-x-4 mb-4">
+            <a href="#" className="hover:text-[#158C8C] transition-colors">Privacy Statement</a>
+            <span className="text-[#158C8C]">•</span>
+            <a href="#" className="hover:text-[#158C8C] transition-colors">Terms and Conditions</a>
+          </div>
+          <p className="text-sm text-gray-600">
+            &copy; 2024 Echo. All rights reserved.
+          </p>
+        </div>
       </footer>
     </div>
   );
