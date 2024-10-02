@@ -51,7 +51,7 @@ export default function Component() {
           <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Get Started</button>
         </div>
         <div className="w-1/2 flex justify-center">
-          <Image src="/Images/Hero_Image.png" alt="Hero Image" width={500} height={300} className="rounded-lg shadow-lg" />
+          <Image src="/Images/Hero_Image.png" alt="Hero Image" width={500} height={300} />
         </div>
       </section>
 
@@ -60,7 +60,7 @@ export default function Component() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12">A pricing structure made for <span className="text-[#158C8C]">SMEs</span></h2>
           <div className="flex justify-center items-center space-x-4">
-            <div className="bg-[#158C8C4D] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
+            <div className="bg-[#158C8C1A] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
               <h3 className="text-xl font-bold mb-4">1 Month</h3>
               <p className="text-2xl font-bold mb-6">$35/mth</p>
               <p className="mb-8 text-sm">Try out the platform for a month and discover the power of referral marketing.</p>
@@ -76,7 +76,7 @@ export default function Component() {
                 Get Started
               </button>
             </div>
-            <div className="bg-[#158C8C4D] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
+            <div className="bg-[#158C8C1A] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
               <h3 className="text-xl font-bold mb-4">1 Year</h3>
               <p className="text-2xl font-bold mb-6">$15/mth</p>
               <p className="mb-8 text-sm">Join Echo for a year and save over 90% compared with competing platforms</p>
@@ -96,13 +96,16 @@ export default function Component() {
           <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Boost your acquisition</button>
         </div>
         <div className="w-1/2 flex justify-center">
-          <Image src="/Images/WoM_Image.png" alt="Word of Mouth Image" width={500} height={300} className="rounded-lg shadow-lg" />
+          <Image src="/Images/WoM_Image.png" alt="Word of Mouth Image" width={500} height={300} />
         </div>
       </section>
 
       {/* Features Section */}
       <section id="features" className="py-20 px-6 max-w-7xl mx-auto bg-[#F6F6F6]">
-        <h2 className="text-4xl font-bold mb-12 text-center">Create and launch personalised referral campaigns within minutes</h2>
+        <h2 className="text-4xl font-bold mb-24 text-center">
+          Create referral campaigns for waiting lists<br />
+          <span className="text-[#158C8C]">within minutes</span>
+        </h2>
         <div className="space-y-32">
           {[
             {
@@ -152,16 +155,16 @@ export default function Component() {
             }
           ].map((feature, index) => (
             <div key={index} className="flex items-start space-x-8">
-              <div className="w-1/2">
+              <div className="w-1/4 flex justify-center items-center">
                 {index === 3 ? (
-                  <Image src="/Images/Logos_Integrations.png" alt="Integration Logos" width={250} height={150} className="rounded-lg shadow-lg" />
+                  <Image src="/Images/Logos_Integrations.png" alt="Integration Logos" width={200} height={200} />
                 ) : (
-                  <div className="bg-white w-full h-64 flex items-center justify-center rounded-lg shadow-lg">
+                  <div className="w-full h-48 flex items-center justify-center">
                     [Video Placeholder {index + 1}]
                   </div>
                 )}
               </div>
-              <div className="w-1/2">
+              <div className="w-3/4">
                 <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
                 <ul className="list-disc list-inside space-y-2">
                   {feature.steps.map((step, stepIndex) => (
