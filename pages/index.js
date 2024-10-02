@@ -175,7 +175,7 @@ export default function Component() {
                   </div>
                 )}
               </div>
-              <div className="pl-8 border-l border-gray-200">
+              <div className="pl-8">
                 <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
                 <ul className="list-disc space-y-2">
                   {feature.steps.map((step, stepIndex) => (
