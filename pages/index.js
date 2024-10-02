@@ -29,13 +29,15 @@ export default function Component() {
         <div className="text-2xl font-bold text-[#158C8C]">
           <Image src="/Images/Logo_full.png" alt="Echo Logo" width={120} height={40} />
         </div>
-        <div className="space-x-4">
-          <a href="#features" className="text-black hover:text-[#158C8C] transition-colors">Features</a>
-          <a href="#pricing" className="text-black hover:text-[#158C8C] transition-colors">Pricing</a>
-        </div>
-        <div className="space-x-4">
-          <button className="text-black hover:text-[#158C8C] transition-colors">Log in</button>
-          <button className="bg-[#158C8C] text-white px-4 py-2 rounded hover:bg-[#0F6E6E] transition-colors font-bold">Get Started</button>
+        <div className="flex items-center space-x-8">
+          <div className="space-x-4">
+            <a href="#features" className="text-black hover:text-[#158C8C] transition-colors">Features</a>
+            <a href="#pricing" className="text-black hover:text-[#158C8C] transition-colors">Pricing</a>
+          </div>
+          <div className="space-x-4">
+            <button className="text-black hover:text-[#158C8C] transition-colors">Log in</button>
+            <button className="bg-[#158C8C] text-white px-4 py-2 rounded hover:bg-[#0F6E6E] transition-colors font-bold">Get Started</button>
+          </div>
         </div>
       </nav>
 
@@ -58,11 +60,11 @@ export default function Component() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12">A pricing structure made for <span className="text-[#158C8C]">SMEs</span></h2>
           <div className="flex justify-center items-center space-x-4">
-            <div className="bg-[#158C8C4D] p-8 rounded-lg shadow-lg w-1/3 transform -translate-y-4">
-              <h3 className="text-2xl font-bold mb-4">1 Month</h3>
-              <p className="text-3xl font-bold mb-6">$35/mth</p>
+            <div className="bg-[#158C8C4D] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
+              <h3 className="text-xl font-bold mb-4">1 Month</h3>
+              <p className="text-2xl font-bold mb-6">$35/mth</p>
               <p className="mb-8 text-sm">Try out the platform for a month and discover the power of referral marketing.</p>
-              <button className="bg-[#158C8C] text-white px-6 py-3 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
+              <button className="bg-[#158C8C] text-white px-4 py-2 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
                 Get Started
               </button>
             </div>
@@ -74,11 +76,11 @@ export default function Component() {
                 Get Started
               </button>
             </div>
-            <div className="bg-[#158C8C4D] p-8 rounded-lg shadow-lg w-1/3 transform -translate-y-4">
-              <h3 className="text-2xl font-bold mb-4">1 Year</h3>
-              <p className="text-3xl font-bold mb-6">$15/mth</p>
+            <div className="bg-[#158C8C4D] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
+              <h3 className="text-xl font-bold mb-4">1 Year</h3>
+              <p className="text-2xl font-bold mb-6">$15/mth</p>
               <p className="mb-8 text-sm">Join Echo for a year and save over 90% compared with competing platforms</p>
-              <button className="bg-[#158C8C] text-white px-6 py-3 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
+              <button className="bg-[#158C8C] text-white px-4 py-2 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
                 Get Started
               </button>
             </div>
@@ -101,37 +103,37 @@ export default function Component() {
       {/* Features Section */}
       <section id="features" className="py-20 px-6 max-w-7xl mx-auto bg-[#F6F6F6]">
         <h2 className="text-4xl font-bold mb-12 text-center">Create and launch personalised referral campaigns within minutes</h2>
-        <div className="space-y-16">
+        <div className="space-y-32">
           {[
             {
-              title: "Create an account and choose your plan",
+              title: "1. Create an account and choose your plan",
               steps: [
-                "Create an account within seconds",
-                "Choose a plan that suits your needs",
-                "Pay quickly, easily, and securely through Stripe",
-                "Get started right away"
+                "Create an account within seconds.",
+                "Choose a plan that suits your needs.",
+                "Pay quickly, easily, and securely through Stripe.",
+                "Get started right away."
               ]
             },
             {
-              title: "Create your campaign and form fields",
+              title: "2. Create your campaign and form fields",
               steps: [
-                "Create a new campaign and choose a name",
-                "Select the form fields you have included in the form on your website's referral page",
+                "Create a new campaign and choose a name.",
+                "Select the form fields you have included in the form on your website's referral page.",
                 "Enter the tags used for each of the fields on your website.",
                 "Now you can launch your campaign!"
               ]
             },
             {
-              title: "Set up the campaign tracker",
+              title: "3. Set up the campaign tracker",
               steps: [
                 "In your campaign overview, click edit to set up your campaign's tracker.",
-                "Enter the URL of your website's page containing the sign-up form for your referral campaign",
+                "Enter the URL of your website's page containing the sign-up form for your referral campaign.",
                 "Copy your tracking code, and paste it anywhere between the <head> and </head> parts of your code, as shown in the video.",
                 "If you don't wish to make use of the available integrations, you can save your campaign and start generating Echoes!"
               ]
             },
             {
-              title: "Integrate the platform of your choice",
+              title: "4. Integrate the platform of your choice",
               steps: [
                 "To install and optimally make use of the integrations, please check-out the individual guides through the links below.",
                 <a key="hubspot" href="#" className="text-[#158C8C] hover:underline">Hubspot</a>,
@@ -141,18 +143,18 @@ export default function Component() {
               ]
             },
             {
-              title: "Check and export your results",
+              title: "5. Check and export your results",
               steps: [
-                "Open up your campaign in the campaign dashboard",
-                "Check your total results, as well as the performance of your participants",
-                "Export your data to CSV, or synchronize your campaign data with any platform you've integrated"
+                "Open up your campaign in the campaign dashboard.",
+                "Check your total results, as well as the performance of your participants.",
+                "Export your data to CSV, or synchronize your campaign data with any platform you've integrated."
               ]
             }
           ].map((feature, index) => (
             <div key={index} className="flex items-start space-x-8">
               <div className="w-1/2">
                 {index === 3 ? (
-                  <Image src="/Images/Logos_Integrations.png" alt="Integration Logos" width={500} height={300} className="rounded-lg shadow-lg" />
+                  <Image src="/Images/Logos_Integrations.png" alt="Integration Logos" width={250} height={150} className="rounded-lg shadow-lg" />
                 ) : (
                   <div className="bg-white w-full h-64 flex items-center justify-center rounded-lg shadow-lg">
                     [Video Placeholder {index + 1}]
@@ -184,15 +186,15 @@ export default function Component() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#F6F6F6] text-black py-12">
+      <footer className="bg-white text-black py-12">
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
           <Image src="/Images/Logo_full.png" alt="Echo Logo" width={120} height={40} className="mb-4" />
           <p className="mb-4">
-            <a href="mailto:INFO@ECHO.COM" className="hover:text-[#158C8C] transition-colors">INFO@ECHO.COM</a>
+            <a href="mailto:Info@echo.com" className="hover:text-[#158C8C] transition-colors">Info@echo.com</a>
           </p>
-          <div className="mb-4">
+          <div className="flex items-center justify-center space-x-4 mb-4">
             <a href="#" className="hover:text-[#158C8C] transition-colors">Privacy Statement</a>
-            <span className="mx-2">•</span>
+            <span className="text-[#158C8C]">•</span>
             <a href="#" className="hover:text-[#158C8C] transition-colors">Terms and Conditions</a>
           </div>
           <p className="text-sm text-gray-600">
