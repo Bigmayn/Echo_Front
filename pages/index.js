@@ -62,7 +62,7 @@ export default function Component() {
           <div className="flex justify-center items-center space-x-4">
             <div className="bg-[#158C8C1A] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
               <h3 className="text-xl font-bold mb-4">1 Month</h3>
-              <p className="text-2xl font-bold mb-6">$35/mth</p>
+              <p className="text-2xl font-bold mb-6">$10/mth</p>
               <p className="mb-8 text-sm">Try out the platform for a month and discover the power of referral marketing.</p>
               <button className="bg-[#158C8C] text-white px-4 py-2 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
                 Get Started
@@ -70,7 +70,7 @@ export default function Component() {
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg w-1/3 transform scale-105 z-10">
               <h3 className="text-2xl font-bold mb-4">3 Months</h3>
-              <p className="text-3xl font-bold mb-6">$20/mth</p>
+              <p className="text-3xl font-bold mb-6">$5/mth</p>
               <p className="mb-8 text-sm">A full quarter of referral marketing software at a fraction of the price of alternatives.</p>
               <button className="bg-[#158C8C] text-white px-6 py-3 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
                 Get Started
@@ -78,7 +78,7 @@ export default function Component() {
             </div>
             <div className="bg-[#158C8C1A] p-6 rounded-lg shadow-lg w-1/4 transform -translate-y-4">
               <h3 className="text-xl font-bold mb-4">1 Year</h3>
-              <p className="text-2xl font-bold mb-6">$15/mth</p>
+              <p className="text-2xl font-bold mb-6">$1/mth</p>
               <p className="mb-8 text-sm">Join Echo for a year and save over 90% compared with competing platforms</p>
               <button className="bg-[#158C8C] text-white px-4 py-2 rounded w-full hover:bg-[#0F6E6E] transition-colors font-bold">
                 Get Started
@@ -87,20 +87,8 @@ export default function Component() {
           </div>
         </div>
       </section>
-
-      {/* Trust Section */}
-      <section className="flex justify-between items-center py-20 px-6 max-w-7xl mx-auto">
-        <div className="w-1/2 pr-12">
-          <h2 className="text-4xl font-bold mb-6">Word of mouth is trusted up to 10x more than paid advertising</h2>
-          <p className="mb-8 text-lg">Your customers&apos; voices are invaluable, and referral campaigns are the key to unlocking them. We help you Echo your brand efficiently, saving you time and money to focus on growth.</p>
-          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Boost your acquisition</button>
-        </div>
-        <div className="w-1/2 flex justify-center">
-          <Image src="/Images/WoM_Image.png" alt="Word of Mouth Image" width={500} height={300} />
-        </div>
-      </section>
-
-      {/* Updated Features Section */}
+      
+      {/* Features Section */}
       <section id="features" className="py-20 px-6 max-w-7xl mx-auto bg-[#F6F6F6]">
         <h2 className="text-4xl font-bold mb-24 text-center">
           Create referral campaigns for waiting lists<br />
@@ -116,7 +104,7 @@ export default function Component() {
                 "Pay quickly, easily, and securely through Stripe.",
                 "Get started right away."
               ],
-              image: "/placeholder-image-1.png"
+              video: "/Images/Echo_video_1.mp4"
             },
             {
               title: "2. Create your campaign and form fields",
@@ -126,7 +114,7 @@ export default function Component() {
                 "Enter the tags used for each of the fields on your website.",
                 "Now you can launch your campaign!"
               ],
-              image: "/placeholder-image-2.png"
+              video: "/Images/Echo_video_2.mp4"
             },
             {
               title: "3. Set up the campaign tracker",
@@ -136,7 +124,7 @@ export default function Component() {
                 "Copy your tracking code, and paste it anywhere between the <head> and </head> parts of your code, as shown in the video.",
                 "If you don't wish to make use of the available integrations, you can save your campaign and start generating Echoes!"
               ],
-              image: "/placeholder-image-3.png"
+              video: "/Images/Echo_video_3.mp4"
             },
             {
               title: "4. Integrate the platform of your choice",
@@ -156,21 +144,32 @@ export default function Component() {
                 "Check your total results, as well as the performance of your participants.",
                 "Export your data to CSV, or synchronize your campaign data with any platform you've integrated."
               ],
-              image: "/placeholder-image-5.png"
+              video: "/Images/Echo_video_4.mp4"
             }
           ].map((feature, index) => (
             <div key={index} className="grid grid-cols-2 gap-8">
               <div className="flex justify-center items-center">
                 {index === 3 ? (
                   <Image 
-                    src="/Images/Logos_Integrations.png" 
-                    alt={`Step ${index + 1} illustration`} 
-                    width={300} 
-                    height={300} 
+                    src={feature.image}
+                    alt="Integration Logos"
+                    width={150}
+                    height={150}
                     className="w-auto h-auto"
                   />
+                ) : feature.video ? (
+                  <video 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline
+                    className="w-full h-auto rounded-lg shadow-lg"
+                  >
+                    <source src={feature.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 ) : (
-                  <div className="w-full h-48 flex items-center justify-center">
+                  <div className="w-full h-48 flex items-center justify-center bg-gray-200 rounded-lg">
                     [Video Placeholder {index + 1}]
                   </div>
                 )}
@@ -185,6 +184,18 @@ export default function Component() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Trust Section */}
+      <section className="flex justify-between items-center py-20 px-6 max-w-7xl mx-auto">
+        <div className="w-1/2 pr-12">
+          <h2 className="text-4xl font-bold mb-6">Word of mouth is trusted up to 10x more than paid advertising</h2>
+          <p className="mb-8 text-lg">Your customers&apos; voices are invaluable, and referral campaigns are the key to unlocking them. We help you Echo your brand efficiently, saving you time and money to focus on growth.</p>
+          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Boost your acquisition</button>
+        </div>
+        <div className="w-1/2 flex justify-center">
+          <Image src="/Images/WoM_Image.png" alt="Word of Mouth Image" width={500} height={300} />
         </div>
       </section>
 
