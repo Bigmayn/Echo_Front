@@ -88,6 +88,18 @@ export default function Component() {
         </div>
       </section>
       
+      {/* Trust Section */}
+      <section className="flex justify-between items-center py-20 px-6 max-w-7xl mx-auto">
+        <div className="w-1/2 pr-12">
+          <h2 className="text-4xl font-bold mb-6">Word of mouth is trusted up to 10x more than paid advertising</h2>
+          <p className="mb-8 text-lg">Your customers&apos; voices are invaluable, and referral campaigns are the key to unlocking them. We help you Echo your brand efficiently, saving you time and money to focus on growth.</p>
+          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Boost your acquisition</button>
+        </div>
+        <div className="w-1/2 flex justify-center">
+          <Image src="/Images/WoM_Image.png" alt="Word of Mouth Image" width={500} height={300} />
+        </div>
+      </section>
+
       {/* Features Section */}
       <section id="features" className="py-20 px-6 max-w-7xl mx-auto bg-[#F6F6F6]">
         <h2 className="text-4xl font-bold mb-24 text-center">
@@ -184,18 +196,6 @@ export default function Component() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Trust Section */}
-      <section className="flex justify-between items-center py-20 px-6 max-w-7xl mx-auto">
-        <div className="w-1/2 pr-12">
-          <h2 className="text-4xl font-bold mb-6">Word of mouth is trusted up to 10x more than paid advertising</h2>
-          <p className="mb-8 text-lg">Your customers&apos; voices are invaluable, and referral campaigns are the key to unlocking them. We help you Echo your brand efficiently, saving you time and money to focus on growth.</p>
-          <button className="bg-[#158C8C] text-white px-8 py-4 rounded text-lg font-bold hover:bg-[#0F6E6E] transition-colors">Boost your acquisition</button>
-        </div>
-        <div className="w-1/2 flex justify-center">
-          <Image src="/Images/WoM_Image.png" alt="Word of Mouth Image" width={500} height={300} />
         </div>
       </section>
 
